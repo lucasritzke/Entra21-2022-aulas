@@ -10,27 +10,57 @@
     <center>
         <img src="img/download.png" width="150px">
      </center>
+    
+     <center>
+        <nav>
+               <a href="index.html">Home</a>
+               <a href="empresa.html">Empresa</a>
+               <a href="servicos.html">Serviços</a>
+               <a href="beneficios.html">Beneficios</a>
+               <a href="Contato.html">Contato</a>
+           </nav>
+     </center>
 
-    <center>
-         <nav>
-                <a href="index.html">Home</a>
-                <a href="empresa.html">Empresa</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="Contato.html">Contato</a>
-            </nav>
-      </center>
+     <form action="enviaemail.cs" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="informe seu nome Conpleto" readonly>
+        </br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Informe seu e-mail">
+    </br>
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="informe sua senha" required>
+    </br>
+        <select name="estado" required>
+        <option value="">Selecione o Estado</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="PR">Paraná</option>
+        <option value="RS">Riu Grande do Sul</option>
+        </select>
+    </br>
+   
+        <input type="datetime-local" name="data" required>
+    </br>
+    
+        <label>Sexo:</label>
+    </br>
+       Masculino <input type="radio" name="sexo" value="M" required>
+    </br>
+       Feminino <input type="radio" name="sexo" value="F" required>
 
-      <center><h2>CONTATO</h2></center>
-    <center><p>Para entrar em contato com a Blusoft, ligue para (47)93564-2156
-        Se desejar, você também pode entrar em contato preenchendo o formulário abaixo:</p></center>
-        <h3>Seu Nome:<input type="text" /></h3>
-        <h3>Seu email:<input type="text" /></h3>
-        <h3>Digite seu Telefone:<input type="text" /></h3>
-        <h3>Escreva sua Mensagem:<input type="text" /></h3>
-        <br/>
-        <button>Enviar</button> <button>Limpar</button>
-       
-        <h4>Ou por email entra21@gmail.com</h4>
-        <h5>Se você não gostou ou se sentiu ofendido de alguma maneira com algo que é apresentado neste site <a href="https://www.procon.sc.gov.br/">Reclame-aqui</a></h5>
+    </br>
+
+    <label>Comidas:</label>
+    <input type="checkbox" name="comida" value="lasanha">lasanha
+    <input type="checkbox" name="comida" value="pizza">pizza
+    <input type="checkbox" name="comida" value="arroz">arroz
+    <input type="checkbox" name="comida" value="feijão">feijão
+    </br>
+
+    <button type="submit">Enviar</button>
+        <input type="reset" name="enviar" value="Limpar">
+         </form>
+    
+   
 </body>
 </html>
