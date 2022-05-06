@@ -7,13 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-  <center>
-    <nav>
-        <a href="cadastro.html">Home</a>
-    </nav>
-</center>
+    <center>
+        <img src="img/download.png" width="150px">
+     </center>
 
-<form action="enviaemail.cs" method="post"></form>
+    <center>
+         <nav>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="beneficios.html">Beneficios</a>
+                <a href="Contato.html">Contato</a>
+            
+            </nav>
+      </center>
+
+<form action="enviaemail.cs" method="post">
 
 
 <label>Nome:</label>
@@ -32,7 +41,7 @@
         <input type="rua" name="rua" placeholder="Informe sua rua">
     </br>  
         <label>casa:</label>
-        <input type="nome" name="nome" placeholder="Informe o numero da casa">
+        <input type="nome" name="nome" placeholder="Informe o número da casa">
     </br>
         <label>Bairro:</label>
         <input type="bairro" name="bairro" placeholder="Informe seu Bairro">
@@ -44,19 +53,17 @@
         <input type="estado" name="estado" placeholder="Informe seu estado">
     </br>
         <label>Sexo:</label>
-    </br>
        Masculino <input type="radio" name="sexo" value="M" required>
        Feminino <input type="radio" name="sexo" value="F" required>
     </br>
 
        <label>Nascionalidade:</label>
-    </br>
     <input type="checkbox" name="Nascionalidade" value="Brasileiro">Brasileiro
 </br>
     <input type="checkbox" name="Nascionalidade" value="outro">outro
 </br>
-<button type="submit">Enviar</button>
-<input type="reset" name="enviar" value="Limpar">
+          <button type="submit">Enviar</button>
+          <input type="reset" name="enviar" value="Limpar">
 
     </form>
 </body>
