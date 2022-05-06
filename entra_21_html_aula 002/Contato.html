@@ -18,43 +18,53 @@
                <a href="servicos.html">Serviços</a>
                <a href="beneficios.html">Beneficios</a>
                <a href="Contato.html">Contato</a>
+              
            </nav>
      </center>
 
-     <form action="enviaemail.cs" method="post">
+     <form action="enviaemail.cs" id="cadastroPessoa" method="get" enctype="multipart/form-data">
         <label>Nome:</label>
-        <input type="text" name="nome" placeholder="informe seu nome Conpleto" readonly>
+        <input type="text" name="nome" value="Lucas" placeholder="informe seu nome Conpleto" >
         </br>
         <label>Email:</label>
-        <input type="email" name="email" placeholder="Informe seu e-mail">
+        <input type="email" name="email" value="lucasritzke@gmail.com" placeholder="Informe seu e-mail">
     </br>
         <label>Senha:</label>
-        <input type="password" name="senha" placeholder="informe sua senha" required>
+        <input type="password" name="senha" placeholder="informe sua senha" minlength="8" maxlength="10">
+    </br>
+        <label>Foto:</label>
+        <input type="file" name="foto" multiple>
+    </br>
+        <label>complemento da sua foto</label>
+    <textarea name="Mensagem" required></textarea>
+
+     </br>
+    <input type="hidden" name="codigoIbge" value="1059493">
+
     </br>
         <select name="estado" required>
         <option value="">Selecione o Estado</option>
-        <option value="SC">Santa Catarina</option>
+        <option value="SC" selected>Santa Catarina</option>
         <option value="PR">Paraná</option>
         <option value="RS">Riu Grande do Sul</option>
         </select>
     </br>
    
-        <input type="datetime-local" name="data" required>
+        <input type="datetime-local" name="data" class="input-form">
     </br>
     
         <label>Sexo:</label>
     </br>
-       Masculino <input type="radio" name="sexo" value="M" required>
+       Masculino <input type="radio" name="sexo" checked value="M">
     </br>
-       Feminino <input type="radio" name="sexo" value="F" required>
-
-    </br>
-
+       Feminino <input type="radio" name="sexo" value="F">
+    
+</br>
     <label>Comidas:</label>
-    <input type="checkbox" name="comida" value="lasanha">lasanha
+    <input type="checkbox" name="comida" checked value="lasanha">lasanha
     <input type="checkbox" name="comida" value="pizza">pizza
-    <input type="checkbox" name="comida" value="arroz">arroz
-    <input type="checkbox" name="comida" value="feijão">feijão
+    <input type="checkbox" name="comida" checked value="arroz">arroz
+    <input type="checkbox" name="comida" checked value="feijão">feijão
     </br>
 
     <button type="submit">Enviar</button>
