@@ -1,26 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
 html, body{
     margin: 0;
     padding: 0;
+}
+*{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 nav{
     position: absolute;
     left: 0;
     top: 0;
      width: 100%;
-     height: 160px;
-     background: #c90e49
+     height: 152px;
+     background: #ffffff
 }
 .logoSite{
     float: left;
-    width: 150px;
+    width: 120px;
 }
+/* configuração navegação */
+
 nav a{
     display: block;
     width: auto;
-    height: 56px;
+    height: 80px;
     padding: 4px;
     float: left;
     line-height: 53px;
-    color: #fff;
+    color: rgb(68, 66, 66);
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    font-style: oblique;
+    line-height: 109px;
+}
+/* regras dos conteudos */
+main{
+    padding: 80px 10px;
+}
+
+.homeArticle{
+    width: 40%;
+    background: rgb(255, 255, 255);
+    margin: 15px 2%;
+    border-radius: 9px;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+    padding: 16px;
+    display: inline-block;
+}
+.homeArticle img{
+    float: left;
+    margin-right: 10px;
+    border: 2px solid rgb(68, 66, 66);
+    border-radius: 15px;
+}
+.homeArticle h2{
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #170c53
+}
+.homeArticle p{
+    font-style: italic;
+    
+}
+.homeArticle a{
+    display: inline-block;
+    width: auto;
+    padding: 4px;
+    background: #838383;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    float: right;
+}
+.homeArticle a:hover{
+    background: rgb(14, 8, 72);
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 15px;
 }
