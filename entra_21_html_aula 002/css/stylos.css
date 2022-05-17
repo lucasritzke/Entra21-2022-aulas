@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+html{
+    overflow-y: scroll;
+}
 html, body{
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 *{
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
+body{
+    background: purple;
+}
+body.empresa{
+    background: url(../img/Background.jpg) no-repeat center fixed;
+    background-size: 100vw;
+}
+body.servicos{
+    background: unset;
+}
+body.servicos video{
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
 nav{
     position: absolute;
     left: 0;
@@ -16,6 +38,9 @@ nav{
      width: 100%;
      height: 152px;
      background: rgb(255, 255, 255)
+}
+body.servicos nav{
+    background: #4565;
 }
 .logoSite{
     float: left;
@@ -36,11 +61,11 @@ nav a{
     font-weight: 600;
     font-size: 17px;
     font-style: oblique;
-    line-height: 109px;
+    line-height: 115px;
 }
 /* regras dos conteudos */
 main{
-    padding: 80px 10px;
+    padding: 150px 10px;
 }
 
 .homeArticle{
@@ -109,6 +134,32 @@ body{
    margin: 1%;
    width: 23%;
 }
+/* pagina serviços */
+body.servicos table{
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+border: 1px solid  firebrick;
+}
+body.servicos table td{
+    background: #ffffff;
+    padding: 4px;
+}
+body.servicos table tr:nth-child(even) td {
+    background-color: #554848;
+}
+
+
+body.servicos table .titulo td{
+background: #170c53;
+border: 1;
+color: #ddd;
+text-align: center;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+
 footer{
     width: 100%;
     height: 40px;
