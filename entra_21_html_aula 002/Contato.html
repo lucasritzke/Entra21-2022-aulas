@@ -3,70 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css/stylos.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <nav>
-    <center>
-        <img src="img/download.png" width="150px">
-     </center>
-    
-     <center>
+<body class="contato">
+    <nav>  
+        <center>
+          <img src="img/download.png" class="logoSite" >
+       </center>
         
-            <a href="index.html">Home</a>
-               <a href="empresa.html">Empresa</a>
-               <a href="servicos.html">Serviços</a>
-               <a href="beneficios.html">Beneficios</a>
-               <a href="Contato.html">Contato</a>
-           </nav>
-     </center>
+        <center>
+                <a href="index.html">Home</a>
+                   <a href="empresa.html">Empresa</a>
+                   <a href="servicos.html">Serviços</a>
+                   <a href="Contato.html">Contato</a>
+               </nav>
+        </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <center><h2>Contato</h2></center>
 
-     <form action="enviaemail.cs" id="cadastroPessoa" method="get" enctype="multipart/form-data">
-        <label>Nome:</label>
-        <input type="text" name="nome" value="Lucas" placeholder="informe seu nome Conpleto" >
-      
-        <label>Email:</label>
-        <input type="email" name="email" value="lucasritzke@gmail.com" placeholder="Informe seu e-mail">
+     <form action="enviaemail.cs" id="cadastroPessoa" method="get" enctype="multipart/form-data" >
+      <div>
 
-        <label>Senha:</label>
-        <input type="password" name="senha" placeholder="informe sua senha" minlength="8" maxlength="10">
- 
-        <label>Foto:</label>
-        <input type="file" name="foto" multiple>
- 
-        <label>complemento da sua foto</label>
-    <textarea name="Mensagem" required></textarea>
-
-
-    <input type="hidden" name="codigoIbge" value="1059493">
-
-   
-        <select name="estado" required>
-        <option value="">Selecione o Estado</option>
-        <option value="SC" selected>Santa Catarina</option>
-        <option value="PR">Paraná</option>
-        <option value="RS">Riu Grande do Sul</option>
-        </select>
- 
-   
-        <input type="datetime-local" name="data" class="input-form">
+          <label>Nome:</label>
+          <input type="text" name="nome" placeholder="Informe Seu Nome Completo" class="text-input">
+          <label>Whats:</label>
+          <input type="number" name="numero" placeholder="Informe Seu Telefone" >
+        </div>
+          <label >Email:</label>
+          <input type="email" name="email"  placeholder="Informe Seu E-mail" class="email">
+        <br>  
+        <label>Setor:</label>
+        <select name="setor" required class="setor">
+            <option value="">Selecione Algum Setor</option>
+            <option value="cobrança">Cobrança</option>
+            <option value="Estoque">Estoque</option>
+            </select>
+            <br>
+           
+           
+            <label>Sua Mensagem:</label>
+            <br>
+        <textarea name="Mensagem" required class="texto"></textarea>
 
     
-        <label>Sexo:</label>
-   
-       Masculino <input type="radio" name="sexo" checked value="M">
-   
-       Feminino <input type="radio" name="sexo" value="F">
     
-    <label>Comidas:</label>
-    <input type="checkbox" name="comida" checked value="lasanha">lasanha
-    <input type="checkbox" name="comida" value="pizza">pizza
-    <input type="checkbox" name="comida" checked value="arroz">arroz
-    <input type="checkbox" name="comida" checked value="feijão">feijão
+            <input type="hidden" name="codigoIbge" value="1059493">
+<br>
+<br>
 
-    <button type="submit">Enviar</button>
-        <input type="reset" name="enviar" value="Limpar">
+   <center> <button type="submit">Enviar</button>
+        <input type="reset" name="enviar" value="Cancelar"></center>
          </form>
     
          <footer>
