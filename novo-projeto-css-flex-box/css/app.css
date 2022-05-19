@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1280px;   
+    display: flex;
+    background: rgb(24, 191, 113);
+    min-height: 500px;
+   flex: auto;
+ align-items: flex-start;
+   justify-content: flex-start;
+    
+}
+.coluna{
+    width: 20%;
+    height: 240px;
+}
+.coluna.orange{
+    background: orange;
+}
+.coluna.blue{
+    background: blue;
+}
+.coluna.red{
+    background: red;
+}
